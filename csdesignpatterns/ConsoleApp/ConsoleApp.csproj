@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{703F0EBC-DC11-4226-BE15-7F78ADE6E173}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp</RootNamespace>
+    <AssemblyName>ConsoleApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="csdpe\chapter01\AbstractCar.cs" />
+    <Compile Include="csdpe\chapter01\AbstractEngine.cs" />
+    <Compile Include="csdpe\chapter01\AbstractVan.cs" />
+    <Compile Include="csdpe\chapter01\AbstractVehicle.cs" />
+    <Compile Include="csdpe\chapter01\BoxVan.cs" />
+    <Compile Include="csdpe\chapter01\Client.cs" />
+    <Compile Include="csdpe\chapter01\Coupe.cs" />
+    <Compile Include="csdpe\chapter01\IEngine.cs" />
+    <Compile Include="csdpe\chapter01\IVehicle.cs" />
+    <Compile Include="csdpe\chapter01\Pickup.cs" />
+    <Compile Include="csdpe\chapter01\Saloon.cs" />
+    <Compile Include="csdpe\chapter01\Sport.cs" />
+    <Compile Include="csdpe\chapter01\StandardEngine.cs" />
+    <Compile Include="csdpe\chapter01\TurboEngine.cs" />
+    <Compile Include="csdpe\chapter01\VehicleColour.cs" />
+    <Compile Include="csdpe\chapter02\AbstractVehicleFactory.cs" />
+    <Compile Include="csdpe\chapter02\CarBody.cs" />
+    <Compile Include="csdpe\chapter02\CarChassis.cs" />
+    <Compile Include="csdpe\chapter02\CarFactory.cs" />
+    <Compile Include="csdpe\chapter02\CarWindows.cs" />
+    <Compile Include="csdpe\chapter02\Client.cs" />
+    <Compile Include="csdpe\chapter02\IBody.cs" />
+    <Compile Include="csdpe\chapter02\IChassis.cs" />
+    <Compile Include="csdpe\chapter02\IWindows.cs" />
+    <Compile Include="csdpe\chapter02\VanBody.cs" />
+    <Compile Include="csdpe\chapter02\VanChassis.cs" />
+    <Compile Include="csdpe\chapter02\VanFactory.cs" />
+    <Compile Include="csdpe\chapter02\VanWindows.cs" />
+    <Compile Include="csdpe\chapter03\CarBuilder.cs" />
+    <Compile Include="csdpe\chapter03\CarDirector.cs" />
+    <Compile Include="csdpe\chapter03\Client.cs" />
+    <Compile Include="csdpe\chapter03\VanBuilder.cs" />
+    <Compile Include="csdpe\chapter03\VanDirector.cs" />
+    <Compile Include="csdpe\chapter03\VehicleBuilder.cs" />
+    <Compile Include="csdpe\chapter03\VehicleDirector.cs" />
+    <Compile Include="csdpe\chapter04\CarFactory.cs" />
+    <Compile Include="csdpe\chapter04\Client.cs" />
+    <Compile Include="csdpe\chapter04\VanFactory.cs" />
+    <Compile Include="csdpe\chapter04\VehicleFactory.cs" />
+    <Compile Include="csdpe\chapter05\AbstractCar.cs" />
+    <Compile Include="csdpe\chapter05\AbstractEngine.cs" />
+    <Compile Include="csdpe\chapter05\AbstractVan.cs" />
+    <Compile Include="csdpe\chapter05\AbstractVehicle.cs" />
+    <Compile Include="csdpe\chapter05\BoxVan.cs" />
+    <Compile Include="csdpe\chapter05\Client.cs" />
+    <Compile Include="csdpe\chapter05\Coupe.cs" />
+    <Compile Include="csdpe\chapter05\IEngine.cs" />
+    <Compile Include="csdpe\chapter05\IVehicle.cs" />
+    <Compile Include="csdpe\chapter05\Pickup.cs" />
+    <Compile Include="csdpe\chapter05\Saloon.cs" />
+    <Compile Include="csdpe\chapter05\Sport.cs" />
+    <Compile Include="csdpe\chapter05\StandardEngine.cs" />
+    <Compile Include="csdpe\chapter05\TurboEngine.cs" />
+    <Compile Include="csdpe\chapter05\VehicleColour.cs" />
+    <Compile Include="csdpe\chapter05\VehicleManager.cs" />
+    <Compile Include="csdpe\chapter05\VehicleManagerLazy.cs" />
+    <Compile Include="csdpe\chapter06\Client.cs" />
+    <Compile Include="csdpe\chapter06\SerialNumberGenerator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
